@@ -8,11 +8,11 @@
     </head>
     <body>
       <div class="container">
-      <h1 class="text-center mt-2 mb-4">Jovian Careers</h1>
+      <h1 class="text-center mt-2 mb-4">{{campanyname}} Careers</h1>
       <img class = "img-fluid" src="static/logo.png">
       <h2 class="text-center mt-2 mb-4">About Jovian</h2>
   <p class="lead">When returning HTML (the dxefault response type in Flask), any user-provided values rendered in the output must be escaped to protect from injection attacks. HTML templates rendered with Jinja, introduced later, will do this automatically. If a user managed to submit the name, escaping causes it to be rendered as text, rather than running the script in the user’s browser.</p>
-      <h2 class="text-center mt-2 mb-4">Open Positions</h2>
+      <h2 class="text-center mt-2 mb-4">Open Jobs</h2>
         {% for job in jobs %}
       <div >
      {% include 'joblist.html' %}
