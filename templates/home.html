@@ -7,11 +7,19 @@
       <title>{{campanyname}} Careers</title>
     </head>
     <body>
+      {% include 'nav.html' %}
+       <img class = "img-fluid" src="static/logo.png">
       <div class="container">
       <h1 class="text-center mt-2 mb-4">{{campanyname}} Careers</h1>
-      <img class = "img-fluid" src="static/logo.png">
+     <div class="row">
+       <div class="col-6">
       <h2 class="text-center mt-2 mb-4">About Jovian</h2>
-  <p class="lead">When returning HTML (the dxefault response type in Flask), any user-provided values rendered in the output must be escaped to protect from injection attacks. HTML templates rendered with Jinja, introduced later, will do this automatically. If a user managed to submit the name, escaping causes it to be rendered as text, rather than running the script in the user’s browser.</p>
+  <p class="lead">When returning HTML (the dxefault response type in Flask), any user-ovided values rendered in the output must be escaped to protect from injection attacks. HTML templates rendered with Jinja, introduced later, will do this automatically. If a user managed to submit the name, escaping causes it to be rendered as text, rather than running the script in the user’s browser.</p>
+       </div>
+       <div class="d-none d-md-block col-6">
+         <img src="/static/people.jpg" style="height:320px; border-radius:4px; margin-bottom: 16px;">
+       </div>
+</div>
       <h2 class="text-center mt-2 mb-4">Open Jobs</h2>
         {% for job in jobs %}
       <div >
@@ -19,9 +27,9 @@
        </div>
         {% endfor %}
         <div class="text-center">
-      <button type = "button" class="btn btn-lg btn-primary mb-4"> Contact Us</button>
-          <p >copyhright &copy 2023, Jovian</p>
-        </div>
+      <a href= "mailto:birhane1994@gmail.com? subject=Question" class="btn btn-lg btn-primary mb-4"> Email Us</button>
+         </div>
       </div>
+      {% include 'footer.html' %}
     </body>
   </html>
